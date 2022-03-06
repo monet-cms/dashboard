@@ -30,7 +30,7 @@ class DashboardServiceProvider extends ServiceProvider
             return $this->hasMany(Dashboard::class);
         });
 
-        User::extend('active_dashboard', function () {
+        User::extend('getActiveDashboardAttribute', function () {
             return $this->dashboards()->where('active', '=', 1)->first();
         });
     }
