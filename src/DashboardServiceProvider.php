@@ -15,6 +15,7 @@ class DashboardServiceProvider extends ServiceProvider
     {
         $package
             ->name('monet.dashboard')
+            ->hasViews()
             ->hasViewComponent('dashboard-tile', DashboardTile::class)
             ->hasComponentNamespace(
                 'Monet\\Framework\\Dashboard\\Http\\Components',
