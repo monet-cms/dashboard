@@ -4,7 +4,7 @@ namespace Monet\Framework\Dashboard;
 
 use Illuminate\Support\Facades\Request;
 use Monet\Framework\Auth\Models\User;
-use Monet\Framework\Dashboard\Http\Components\DashboardTileComponent;
+use Monet\Framework\Dashboard\Http\Components\DashboardTile;
 use Monet\Framework\Dashboard\Models\Dashboard;
 use Monet\Framework\Support\Services\Package;
 use Monet\Framework\Support\Services\ServiceProvider;
@@ -16,7 +16,7 @@ class DashboardServiceProvider extends ServiceProvider
         $package
             ->name('monet.dashboard')
             ->hasViews()
-            ->hasViewComponent('monet.dashboard', DashboardTileComponent::class)
+            ->hasViewComponent('monet.dashboard', DashboardTile::class)
             ->hasMigrations([
                 'create_dashboards_table',
                 'create_dashboard_tiles_table',

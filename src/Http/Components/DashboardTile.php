@@ -4,7 +4,7 @@ namespace Monet\Framework\Dashboard\Http\Components;
 
 use Illuminate\View\Component;
 
-class DashboardTileComponent extends Component
+class DashboardTile extends Component
 {
     public string $gridArea;
 
