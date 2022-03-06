@@ -1,3 +1,3 @@
-<div>
-    <h1>This is the dummy tile</h1>
-</div>
+<x-dashboard-tile :position="$position">
+    <h1>Dummy</h1>
+</x-dashboard-tile>
