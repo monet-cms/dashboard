@@ -17,7 +17,6 @@ class DashboardServiceProvider extends ServiceProvider
         $package
             ->name('monet.dashboard')
             ->hasViews()
-            ->hasRoute('web')
             ->hasMigrations([
                 'create_dashboards_table',
                 'create_dashboard_tiles_table',
