@@ -2,7 +2,6 @@
 
 namespace Monet\Framework\Dashboard;
 
-use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Request;
 use Monet\Framework\Auth\Models\User;
 use Monet\Framework\Dashboard\Http\Components\DashboardTile;
@@ -16,7 +15,11 @@ class DashboardServiceProvider extends ServiceProvider
     {
         $package
             ->name('monet.dashboard')
-            ->hasViewComponent('dashboard', DashboardTile::class)
+            ->hasViewComponent('dashboard-tile', DashboardTile::class)
+            ->hasComponentNamespace(
+                'Monet\\Framework\\Dashboard\\Http\\Components',
+                'monet.dashboard'
+            )
             ->hasMigrations([
                 'create_dashboards_table',
                 'create_dashboard_tiles_table',
@@ -36,8 +39,6 @@ class DashboardServiceProvider extends ServiceProvider
 
     protected function packageBooted(): void
     {
-        Blade::component('dashboard-tile', DashboardTile::class);
-        
         Request::macro('test', function () {
             echo 'I am working!';
         });
