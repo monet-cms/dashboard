@@ -11,6 +11,7 @@
         "php": "^8.0",
         "illuminate/contracts": "^9.3",
         "illuminate/support": "^9.3",
+        "livewire/livewire": "^2.10",
         "monet/auth": "dev-main",
         "monet/support": "dev-main",
         "spatie/laravel-dashboard": "^2.1"
