@@ -2,7 +2,9 @@
 
 namespace Monet\Framework\Dashboard\Http\Livewire;
 
-class DashboardTileComponent
+use Livewire\Component;
+
+class DashboardTileComponent extends Component
 {
     public string $gridArea;
 
