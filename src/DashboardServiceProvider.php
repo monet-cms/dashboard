@@ -5,7 +5,7 @@ namespace Monet\Framework\Dashboard;
 use Illuminate\Support\Facades\Request;
 use Livewire\Livewire;
 use Monet\Framework\Auth\Models\User;
-use Monet\Framework\Dashboard\Http\Livewire\DummyTile;
+use Monet\Framework\Dashboard\Http\Livewire\DashboardTileComponent;
 use Monet\Framework\Dashboard\Models\Dashboard;
 use Monet\Framework\Support\Services\Package;
 use Monet\Framework\Support\Services\ServiceProvider;
@@ -45,6 +45,6 @@ class DashboardServiceProvider extends ServiceProvider
 
     protected function registerLivewireComponents(): void
     {
-        Livewire::component('monet.dashboard::dummy-tile', DummyTile::class);
+        Livewire::component('monet.dashboard::dashboard-tile', DashboardTileComponent::class);
     }
 }

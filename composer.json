@@ -13,8 +13,7 @@
         "illuminate/support": "^9.3",
         "livewire/livewire": "^2.10",
         "monet/auth": "dev-main",
-        "monet/support": "dev-main",
-        "spatie/laravel-dashboard": "^2.1"
+        "monet/support": "dev-main"
     },
     "autoload": {
         "psr-4": {
@@ -23,13 +22,6 @@
     },
     "config": {
         "sort-packages": true
-    },
-    "extra": {
-        "laravel": {
-            "dont-discover": [
-                "spatie/laravel-dashboard"
-            ]
-        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
