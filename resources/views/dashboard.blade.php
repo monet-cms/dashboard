@@ -1,6 +1,6 @@
 <x-dashboard>
     @forelse($dashboard->tiles as $tile)
-        {{{$tile->html}}}
+        {!! $tile->html !!}
     @empty
         <h1>No tiles</h1>
     @endforelse
