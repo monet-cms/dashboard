@@ -2,7 +2,8 @@
     "name": "monet/dashboard",
     "slug": "monet/dashboard",
     "providers": [
-        "Monet\\Framework\\Dashboard\\DashboardServiceProvider"
+        "Monet\\Framework\\Dashboard\\DashboardServiceProvider",
+        "Spatie\\Dashboard\\DashboardServiceProvider"
     ],
     "dependencies": []
 }
