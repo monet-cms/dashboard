@@ -10,6 +10,15 @@ class Dashboard extends Model
 {
     use Extendable;
 
+    protected $fillable = [
+        'name',
+        'active'
+    ];
+
+    protected $casts = [
+        'active' => 'boolean'
+    ];
+
     public function user()
     {
         return $this->belongsTo(User::class);
