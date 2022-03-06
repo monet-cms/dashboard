@@ -1,4 +1,7 @@
 <x-dashboard>
-    <livewire:monet.dashboard::dummy-tile position="a1:a4"/>
-    <livewire:monet.dashboard::dummy-tile position="b1:b4"/>
+    @forelse($tiles as $tile)
+        {{{$tile->html}}}
+    @empty
+        <h1>No tiles</h1>
+    @endforelse
 </x-dashboard>
