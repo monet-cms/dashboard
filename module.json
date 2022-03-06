@@ -1,5 +1,8 @@
 {
     "name": "monet/dashboard",
     "slug": "monet/dashboard",
+    "providers": [
+        "Monet\\Framework\\Dashboard\\DashboardServiceProvider"
+    ],
     "dependencies": []
 }
