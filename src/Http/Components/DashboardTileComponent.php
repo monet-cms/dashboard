@@ -1,8 +1,8 @@
 <?php
 
-namespace Monet\Framework\Dashboard\Http\Livewire;
+namespace Monet\Framework\Dashboard\Http\Components;
 
-use Livewire\Component;
+use Illuminate\View\Component;
 
 class DashboardTileComponent extends Component
 {
@@ -37,7 +37,7 @@ class DashboardTileComponent extends Component
 
     public function render()
     {
-        return view('monet.dashboard::dashboard-tile');
+        return view('monet.dashboard::components.dashboard-tile');
     }
 
     protected function convertToGridArea(string $position): string
