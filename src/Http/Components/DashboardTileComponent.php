@@ -37,7 +37,7 @@ class DashboardTileComponent extends Component
 
     public function render()
     {
-        return view('monet.dashboard::components.dashboard-tile');
+        return view('monet.dashboard::dashboard-tile');
     }
 
     protected function convertToGridArea(string $position): string
