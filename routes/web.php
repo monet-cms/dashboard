@@ -8,4 +8,4 @@ Route::get('/dashboard', function () {
     return view('monet.dashboard::dashboard', [
         'dashboard' => $dashboard
     ]);
-})->middleware('auth')->name('dashboard');
+})->middleware(['web', 'auth'])->name('dashboard');
