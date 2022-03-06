@@ -1,6 +1,6 @@
 <x-dashboard>
     @forelse($dashboard->tiles as $tile)
-        {!! $tile->html !!}
+        <livewire:is :component="$tile->name" :position="$tile->position"/>
     @empty
         <h1>No tiles</h1>
     @endforelse
