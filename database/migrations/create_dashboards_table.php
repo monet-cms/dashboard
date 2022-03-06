@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('dashboards', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
             $table->boolean('active');
             $table->foreignId('user_id')->index()->constrained()->cascadeOnDelete();
             $table->timestamps();
